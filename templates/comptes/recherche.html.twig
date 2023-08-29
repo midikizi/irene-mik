@@ -1,0 +1,15 @@
+{# templates/votre_template.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Recherche</h1>
+    {{ form_start(form) }}
+    {{ form_row(form.numero_compte) }}
+    {{ form_row(form.save) }}
+
+
+    {{ form_end(form) }}
+
+    {{ include('comptes/_delete_form.html.twig') }}
+{% endblock %}

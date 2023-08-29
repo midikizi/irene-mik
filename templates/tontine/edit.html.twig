@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+k %}
+
+{% block body %}
+   >
+
+    {{ include('tontine/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('app_tontines_index') }}"class="btn btn-lg btn-primary"><i class="fas fa-chevron-left"></i></a>
+
+    {{ include('tontine/_delete_form.html.twig') }}
+{% endblock %}

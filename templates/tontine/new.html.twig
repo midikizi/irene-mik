@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+
+
+{% block body %}
+
+
+    {{ include('tontine/_form.html.twig') }}
+
+    <a href="{{ path('app_tontines_index') }}"class="btn btn-lg btn-primary"><i class="fas fa-chevron-left"></i></a>
+{% endblock %}

@@ -1,0 +1,203 @@
+{% extends 'temp_index.html.twig' %}
+{%block content %}
+<!-- ======= Header ======= -->
+<header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+        <a href="index.html" class="logo d-flex align-items-center">
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+            <!-- <img src="assets/img/logo.png" alt=""> -->
+            <h1>CRONANCE<span>.</span></h1>
+        </a>
+
+        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a href="/homes" class="active">Home</a></li>
+                <li><a href="/propos">A propos</a></li>
+                <li><a href="/service">Services</a></li>
+                <li><a href="/clients">Client</a></li>
+
+                <li class="dropdown"><a href="#"><i
+                                    class="fas fa-user user-icon", class="bi bi-chevron-down dropdown-indicator" ></i></a>
+                    <ul>
+
+                        <li><a href="/logout">logout</a></li>
+                        <li><a href="/register">register</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </nav><!-- .navbar -->
+
+    </div>
+</header><!-- End Header -->
+
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="hero">
+
+    <div class="info d-flex align-items-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <h2 data-aos="fade-down">Bienvenu à <span>CRONANCE</span></h2>
+                    <p data-aos="fade-up">Ce projet a pour objectif de créer une application web
+                        qui permettra aux microfinances de gérer leurs différentes prestations de service dans leurs
+                        différents centres. Ainsi les acteurs de microfinance pourront proposer leurs services aux clients à travers
+                        une application web disponible de partout. Ils pourront centraliser les données et faciliter les actions
+                        concernant les activités de la microfinance. </p>
+                    <a data-aos="fade-up" data-aos-delay="200" href="#get-started" class="btn-get-started">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+
+        <div class="carousel-item active" style="background-image: url({{ asset('assets/img/hero-carousel/hero-carousel-1.jpg') }})">
+        </div>
+        <div class="carousel-item" style="background-image: url({{ asset('assets/img/hero-carousel/hero-carousel-2.jpg') }})"></div>
+        <div class="carousel-item" style="background-image: url({{ asset('assets/img/hero-carousel/hero-carousel-3.jpg') }})"></div>
+        <div class="carousel-item" style="background-image: url({{ asset('assets/img/hero-carousel/hero-carousel-4.jpg') }})"></div>
+        <div class="carousel-item" style="background-image: url({{ asset('assets/img/hero-carousel/hero-carousel-5.jpg') }})"></div>
+
+        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+    </div>
+
+</section><!-- End Hero Section -->
+
+<main id="main">
+
+    <!-- ======= Get Started Section ======= -->
+    <section id="get-started" class="get-started section-bg">
+        <div class="container">
+
+            <div class="row justify-content-between gy-4">
+
+                <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up">
+                    <div class="content">
+                        <h3>Minus hic non reiciendis ea possimus at quia.</h3>
+                        <p>Rem id rerum. Debitis deserunt quidem delectus expedita ducimus dolor. Aut iusto ipsa. Eos ipsum nobis
+                            ipsa soluta itaque perspiciatis fuga ipsum perspiciatis. Eum amet fugiat totam nisi possimus ut delectus
+                            dicta.
+                        <p>Aliquam velit deserunt autem. Inventore et saepe. Tenetur suscipit eligendi labore culpa eos. Deserunt
+                            porro magni qui necessitatibus dolorem at animi cupiditate.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-5" data-aos="fade">
+                    <form action="forms/quote.php" method="post" class="php-email-form">
+                        <h3>Formulaire</h3>
+                        <p>Veuillez renseigner ici vos informations.</p>
+                        <div class="row gy-3">
+
+                            <div class="col-md-12">
+                                <input type="text" name="name" class="form-control" placeholder="Name" required>
+                            </div>
+
+                            <div class="col-md-12 ">
+                                <input type="email" class="form-control" name="email" placeholder="Email" required>
+                            </div>
+
+                            <div class="col-md-12">
+                                <input type="text" class="form-control" name="phone" placeholder="Phone" required>
+                            </div>
+
+                            <div class="col-md-12">
+                                <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
+                            </div>
+
+                            <div class="col-md-12 text-center">
+                                <div class="loading">Chargement</div>
+                                <div class="error-message"></div>
+                                <div class="sent-message">Votre requette a été envoyé avec succès. Merci!</div>
+
+                                <button type="submit">Valider</button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div><!-- End Quote Form -->
+
+            </div>
+
+        </div>
+    </section><!-- End Get Started Section -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+
+        <div class="footer-content position-relative">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-info">
+                            <h3>CRONANCE</h3>
+                            <p>
+                                Agbalepedo <br>
+                                IPNET Institute<br><br>
+                                <strong>Phone:</strong> +228 00 00 00 00<br>
+                                <strong>Email:</strong> Ipnet.INSTITUTE@ipnetinstitute.com<br>
+                            </p>
+                            <div class="social-links d-flex mt-3">
+                                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
+                                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div><!-- End footer info column-->
+
+                    <div class="col-lg-2 col-md-3 footer-links">
+                        <h4>Liens utiles</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="about.html">A propos</a></li>
+                            <li><a href="/service">Services</a></li>
+                            <li><a href="#">Politique de confidentialité</a></li>
+                        </ul>
+                    </div><!-- End footer links column-->
+
+                    <div class="col-lg-2 col-md-3 footer-links">
+                        <h4>Nos Services</h4>
+                        <ul>
+                            <li><a href="#">Web Design</a></li>
+                            <li><a href="#">Web Development</a></li>
+                            <li><a href="#">Product Management</a></li>
+                            <li><a href="#">Marketing</a></li>
+                            <li><a href="#">Graphic Design</a></li>
+                        </ul>
+                    </div><!-- End footer links column-->
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-legal text-center position-relative">
+            <div class="container">
+                <div class="copyright">
+                    &copy; Copyright <strong><span>CRONANCE</span></strong>. Tout droits reservés
+                </div>
+                <div class="credits">
+                    <!-- All the links in the footer should remain intact. -->
+                    <!-- You can delete the links only if you purchased the pro version. -->
+                    <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                    <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/ -->
+                    Designed by <a href="https://bootstrapmade.com/">LunarAlgo</a> Distributed by <a
+                            href="https://themewagon.com">IPNET</a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+
+
+{% block body %}
+
+
+    {{ include('pret/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('app_pret_index') }}"class="btn btn-lg btn-primary"><i class="fas fa-chevron-left"></i></a>
+
+    {{ include('pret/_delete_form.html.twig') }}
+{% endblock %}

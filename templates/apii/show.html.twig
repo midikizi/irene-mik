@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+
+
+{% block body %}
+
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ api.id }}</td>
+            </tr>
+            <tr>
+                <th>Montant</th>
+                <td>{{ api.montant }}</td>
+            </tr>
+            <tr>
+                <th>Telephone</th>
+                <td>{{ api.telephone }}</td>
+            </tr>
+            <tr>
+                <th>Operateur</th>
+                <td>{{ api.operateur }}</td>
+            </tr>
+            <tr>
+                <th>Code_secret</th>
+                <td>{{ api.codeSecret }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_api_index') }}">back to list</a>
+
+    <a href="{{ path('app_api_edit', {'id': api.id}) }}">edit</a>
+
+    {{ include('apii/_delete_form.html.twig') }}
+{% endblock %}

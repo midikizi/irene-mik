@@ -1,0 +1,76 @@
+
+{% extends "newBase.html.twig" %}
+
+{% block content %}
+
+
+<!--begin::Main-->
+<div class="d-flex flex-column flex-root">
+    <!--begin::Login-->
+    <div class="login login-1 login-signin-on d-flex flex-column flex-lg-row flex-column-fluid bg-white" id="kt_login">
+        <!--begin::Aside-->
+        <div class="login-aside d-flex flex-column flex-row-auto" style="background-color: #F2C98A;">
+            <!--begin::Aside Top-->
+            <div class="d-flex flex-column-auto flex-column pt-lg-40 pt-15">
+                <!--begin::Aside header-->
+                <a href="#" class="text-center mb-10">
+                    <img src="{{asset('assets3/media/logos/logo-letter-1.png') }}" class="max-h-70px" alt=""/>
+                </a>
+                <!--end::Aside header-->
+
+                <!--begin::Aside title-->
+                <h3 class="font-weight-bolder text-center font-size-h4 font-size-h1-lg" style="color: #986923;">
+                    Discover Cronance<br/>
+
+                </h3>
+                <!--end::Aside title-->
+            </div>
+            <!--end::Aside Top-->
+
+            <!--begin::Aside Bottom-->
+            <div class="aside-img d-flex flex-row-fluid bgi-no-repeat bgi-position-y-bottom bgi-position-x-center" style="background-image: url{{asset('assets/media/svg/illustrations/login-visual-1.svg') }}">
+
+            </div>
+            <!--end::Aside Bottom-->
+        </div>
+        <!--begin::Aside-->
+
+        <!--begin::Content-->
+        <div class="login-content flex-row-fluid d-flex flex-column justify-content-center position-relative overflow-hidden p-7 mx-auto">
+            <!--begin::Content body-->
+            <div class="d-flex flex-column-fluid flex-center">
+                <!--begin::Signin-->
+                <div class="login-form login-signin" class="form-control form-control-solid h-auto py-7 px-6 rounded-lg font-size-h6">
+                    <div class="card-header" ><img src="{{asset('assets3/tmoney') }}" class="max-h-40px" alt=""/><h3 class="text-center font-weight-light my-4">Tmoney</h3></div>
+                    <div class="card-body">
+                        <!--begin::Form-->
+                        {{ form_start(form) }}
+                        {{ form_widget(form) }}
+                        <button class="btn">{{ button_label|default('Save') }}</button>
+                        {{ form_end(form) }}
+                        <!--end::Form-->
+                    </div>
+                    </div>
+                </div>
+                <!--end::Signin-->
+
+                <!--begin::Signup-->
+
+                <!--end::Signup-->
+
+                <!--begin::Forgot-->
+
+                <!--end::Forgot-->
+
+                <!--end::Content body-->
+
+                <!--begin::Content footer-->
+
+                <!--end::Content footer-->
+            </div>
+            <!--end::Content-->
+        </div>
+        <!--end::Login-->
+    </div>
+    <!--end::Main-->
+{% endblock %}

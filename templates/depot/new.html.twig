@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+
+
+    {{ include('depot/_form.html.twig') }}
+
+    <a href="{{ path('app_depot_index') }}" class="btn btn-lg btn-primary"><i class="fas fa-chevron-left"></i></a>
+{% endblock %}

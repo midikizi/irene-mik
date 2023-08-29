@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRONANCE</title>
+    <link rel="stylesheet" href="{{ asset('assets2/css/main.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Favicons -->
+    <link href="{{ asset('assets/img/favicon.png') }}" rel="icon">
+    <link href="{{ asset('assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+</head>
+<body>
+
+
+<div class="icone"><i class="fa-duotone fa-user fa-bounce" style="--fa-primary-color: #3bbb0c; --fa-secondary-color: #0b59e0;"></i></div>
+
+
+<div class="container-first">
+    <h6><span>BIENVENUE <br></span><span>A </span><span>CRONANCE </span></h6>
+    <div class="container-btns">
+        <a href="/login"><button class="btn-first b1">Commencer</button></a>
+
+    </div>
+</div>
+
+<img src="{{ asset('assets2/log.jpg') }}" class="logo">
+
+
+<ul class="medias">
+    <li class="bulle"><img src="{{ asset('assets2/fb.svg') }}" class="logo-medias"></li>
+    <li class="bulle"><img src="{{ asset('assets2/insta.svg') }}" class="logo-medias"></li>
+    <li class="bulle"><img src="{{ asset('assets2/yt.svg') }}" class="logo-medias"></li>
+    <li class="bulle"><a href="/regitration2"><i class="fa-solid fa-user fa-bounce fa-2xl"></i></a></li>
+
+</ul>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script src="{{ asset('assets2/js/main.js') }}"></script>
+</body>
+</html>

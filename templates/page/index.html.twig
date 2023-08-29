@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <title>Cronance</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="{{ asset('assets/img/favicon.png') }}" rel="icon">
+    <link href="{{ asset('assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+            rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="{{ asset('assets2/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets2/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets2/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets2/vendor/aos/aos.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets2/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets2/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="{{ asset('assets2/css/main.css') }}" rel="stylesheet">
+
+    <!-- =======================================================
+    * Template Name: UpConstruction - v1.3.0
+    * Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
+</head>
+
+<body>
+<header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+        <a href="index.html" class="logo d-flex align-items-center">
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+            <!-- <img src="assets/img/logo.png" alt=""> -->
+            <h1>CRONANCE<span>.</span></h1>
+        </a>
+
+        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li class="dropdown"><a href="#"><i
+                                class="fas fa-user user-icon", class="bi bi-chevron-down dropdown-indicator" ></i></a>
+                    <ul>
+
+                        <li><a href="/logout">logout</a></li>
+
+                    </ul>
+                </li>
+
+                <li><a href="/contact">Contact</a></li>
+
+            </ul>
+        </nav><!-- .navbar -->
+
+    </div>
+</header><!-- End Header -->
+
+<main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url('{{ asset('assets2/img/hkd.jpg') }}');">
+        <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
+
+            <h2>Services</h2>
+
+
+        </div>
+    </div>
+    </main>
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+        <div class="container" data-aos="fade-up">
+
+            <div class="row gy-4">
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-item  position-relative">
+                        <div class="icon">
+                            <i class="fa-solid fa-arrow-up-from-bracket fa-flip"></i>
+                        </div>
+                        <h3>Effectuer un Depot</h3>
+
+                        <a href="/depot_api" class="readmore stretched-link">Learn more <i
+                                    class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div><!-- End Service Item -->
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-item position-relative">
+                        <div class="icon">
+                            <i class="fa-sharp fa-regular fa-money-bill fa-bounce"></i>
+                        </div>
+                        <h3>Consulter votre solde</h3>
+
+                        <a href="/depot_solde" class="readmore stretched-link">Learn more <i
+                                    class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div><!-- End Service Item -->
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-item position-relative">
+                        <div class="icon">
+                            <i class="fa-solid fa-handshake-angle fa-beat"></i>
+                        </div>
+                        <h3>Demande de crédit</h3>
+
+                        <a href="/demande" class="readmore stretched-link">Learn more <i
+                                    class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div><!-- End Service Item -->
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-item position-relative">
+                        <div class="icon">
+                            <i class="fa-solid fa-arrow-up-from-ground-water"></i>
+                        </div>
+                        <h3>Retrait</h3>
+
+                        <a href="/retrai" class = "readmore stretched-link">Learn more <i
+                                    class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div><!-- End Service Item -->
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-item position-relative">
+                        <div class="icon">
+                            <i class="fa-solid fa-helmet-safety"></i>
+                        </div>
+                        <h3>Tontine</h3>
+
+                        <a href="/tonti" class="readmore stretched-link">Learn more <i
+                                    class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div><!-- End Service Item -->
+
+            </div>
+
+        </div>
+    </section><!-- End Services Section -->
+
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+
+        <div class="footer-content position-relative">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-info">
+                            <h3>CRONANCE</h3>
+                            <p>
+                                Agbalepedo <br>
+                                IPNET Institute<br><br>
+                                <strong>Phone:</strong> +228 00 00 00 00<br>
+                                <strong>Email:</strong> Ipnet.INSTITUTE@ipnetinstitute.com<br>
+                            </p>
+                            <div class="social-links d-flex mt-3">
+                                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-instagram"></i></a>
+                                <a href="#" class="d-flex align-items-center justify-content-center"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div><!-- End footer info column-->
+
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-legal text-center position-relative">
+            <div class="container">
+                <div class="copyright">
+                    &copy; Copyright <strong><span>CRONANCE</span></strong>. Tout droits reservés
+                </div>
+                <div class="credits">
+                    <!-- All the links in the footer should remain intact. -->
+                    <!-- You can delete the links only if you purchased the pro version. -->
+                    <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                    <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/ -->
+                    Designed by <a href="https://bootstrapmade.com/">LunarAlgo</a> Distributed by <a
+                            href="https://themewagon.com">IPNET</a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+                class="bi bi-arrow-up-short"></i></a>
+
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="{{ asset('assets2/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('assets2/vendor/aos/aos.js') }}"></script>
+    <script src="{{ asset('assets2/vendor/glightbox/js/glightbox.min.js') }}"></script>
+    <script src="{{ asset('assets2/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+    <script src="{{ asset('assets2/vendor/swiper/swiper-bundle.min.js') }}"></script>
+    <script src="{{ asset('assets2/vendor/purecounter/purecounter_vanilla.js') }}"></script>
+    <script src="{{ asset('assets2/vendor/php-email-form/validate.js') }}"></script>
+
+    <!-- Template Main JS File -->
+    <script src="{{ asset('assets/js/main.js') }}"></script>
+
+</body>
+
+</html>

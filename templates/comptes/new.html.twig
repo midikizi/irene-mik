@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+
+
+{% block body %}
+
+
+    {{ include('comptes/_form.html.twig') }}
+
+    <a href="{{ path('app_comptes_index') }}"class="btn btn-lg btn-primary"><i class="fas fa-chevron-left"></i>/a>
+
+{% endblock %}
