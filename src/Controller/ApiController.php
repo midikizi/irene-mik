@@ -31,9 +31,13 @@ class ApiController extends AbstractController
 
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager->persist($api);
+            $this->addFlash('success', 'Le dépot à été éffectuer avec succès !');
             $entityManager->flush();
 
-            return $this->redirectToRoute('app_api_index', [], Response::HTTP_SEE_OTHER);
+            return $this->redirectToRoute('app_fenetrecontrolleur', [], Response::HTTP_SEE_OTHER);
+        } else {
+            // En cas d'échec de la soumission ou de validation
+            $this->addFlash('error', 'le dépot a échoué.');
         }
 
         return $this->render('apii/new.html.twig', [

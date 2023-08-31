@@ -17,7 +17,7 @@ class DepotType extends AbstractType
             ->add('montant')
             ->add('date_depot')
             ->add('client')
-            ->add('comptes', EntityType::class, [
+            ->add('compte', EntityType::class, [
                 // looks for choices from this entity
                 'class' => Comptes::class,
 

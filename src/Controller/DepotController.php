@@ -31,13 +31,16 @@ class DepotController extends AbstractController
         $form = $this->createForm(DepotType::class, $depot);
         $form->handleRequest($request);
 
+
+
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager->persist($depot);
             $entityManager->flush();
 
             //incrémentation du solde du compte
             $data = $form->getData();
-            $compte = $this->getDoctrine()->getRepository(Comptes::class)->findOneBy(['numero_compte' => $data.compte]);
+            //dd($data->getCompte()->getNumeroCompte());
+            $compte = $this->getDoctrine()->getRepository(Comptes::class)->findOneBy(['numero_compte' => $data->getCompte()->getNumeroCompte()]);
 
             ComptesController::Addition($comptesRepository,$compte,$depot);
 
