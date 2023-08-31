@@ -78,4 +78,12 @@ class ApiController extends AbstractController
 
         return $this->redirectToRoute('app_api_index', [], Response::HTTP_SEE_OTHER);
     }
+
+    //#[Route('/fenetre', name: 'app_api_fenetre')]
+    //public function fenetre(): Response
+   // {
+     //   return $this->render('api/fenetre.html.twig', [
+       //     'controller_name' => 'AnnexesController',
+     //   ]);
+   // }
 }

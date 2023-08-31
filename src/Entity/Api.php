@@ -25,6 +25,9 @@ class Api
     #[ORM\Column(length: 12)]
     private ?string $code_secret = null;
 
+    #[ORM\Column(length: 255, nullable: true)]
+    private ?string $status = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -74,6 +77,18 @@ class Api
     public function setCodeSecret(string $code_secret): static
     {
         $this->code_secret = $code_secret;
+
+        return $this;
+    }
+
+    public function getStatus(): ?string
+    {
+        return $this->status;
+    }
+
+    public function setStatus(?string $status): static
+    {
+        $this->status = $status;
 
         return $this;
     }
